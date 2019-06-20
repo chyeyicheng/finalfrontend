@@ -14,7 +14,6 @@ class Example extends React.Component{
 
     componentDidMount(){
         axios({
-            // GET API for Quotes of the Day
             method: 'GET',
             url: "https://official-joke-api.appspot.com/random_joke"
         })
@@ -33,8 +32,16 @@ class Example extends React.Component{
 
     render(){
         return(
-            <div>
-                This is an external api call:
+            <div className="jokes">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                A random Joke:
                 <br/>
                 <br/>
                 {this.state.setup}
