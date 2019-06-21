@@ -20,7 +20,7 @@ class Signup extends React.Component{
         e.preventDefault()
         axios({
             method:"POST",
-            url:"http://localhost:5000/signup",
+            url:"https://finalagain2backend.herokuapp.com/signup",
             data:{
                 name:this.state.name,
                 email:this.state.email,

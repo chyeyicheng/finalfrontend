@@ -17,7 +17,7 @@ class Delete extends React.Component {
         e.preventDefault()
         axios({
             method: 'POST',
-            url: "http://localhost:5000/delete_user",
+            url: "https://finalagain2backend.herokuapp.com/delete_user",
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem("token")}`
             }

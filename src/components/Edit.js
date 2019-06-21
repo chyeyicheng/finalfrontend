@@ -16,7 +16,7 @@ class Edit extends React.Component{
 
     handleSubmit = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:5000/update", {name: this.state.name, email: this.state.email, password: this.state.password}, {
+        axios.post("https://finalagain2backend.herokuapp.com/update", {name: this.state.name, email: this.state.email, password: this.state.password}, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
         }})

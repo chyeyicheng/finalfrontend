@@ -13,7 +13,7 @@ class Addphone extends React.Component{
 
     handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post("http://localhost:5000/create_item", {name: this.state.name}, {
+        axios.post("https://finalagain2backend.herokuapp.com/create_item", {name: this.state.name}, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`
         }})

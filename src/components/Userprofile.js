@@ -14,7 +14,7 @@ class Userprofile extends React.Component {
         }
     }
     componentDidMount() {
-        axios.get('http://localhost:5000/userprofile',{headers: {
+        axios.get('https://finalagain2backend.herokuapp.com/userprofile',{headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }})
         

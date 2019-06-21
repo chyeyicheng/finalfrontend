@@ -12,7 +12,7 @@ class Phone extends React.Component{
     }
 
     componentDidMount(){
-        axios.get('http://localhost:5000/itemlist',{headers: {
+        axios.get('https://finalagain2backend.herokuapp.com/itemlist',{headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
         }})
         
